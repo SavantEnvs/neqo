@@ -1,0 +1,9 @@
+# seed-from: https://app.mayhem.security/savantenvs/neqo/qpack
+project: savantenvs/neqo
+target: qpack-mined-8ed8d75
+cmds:
+  - cmd: /mayhem/qpack
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/qpack-mined-8ed8d75/testsuite
